@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  */
-class List extends Model
+class TaskList extends Model
 {
 	protected $table = 'lists';
 

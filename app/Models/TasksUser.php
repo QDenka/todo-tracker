@@ -37,7 +37,7 @@ class TasksUser extends Model
 
 	public function list()
 	{
-		return $this->belongsTo(List::class);
+		return $this->belongsTo(TaskList::class);
 	}
 
 	public function user()
