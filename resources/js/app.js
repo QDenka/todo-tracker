@@ -1,3 +1,5 @@
-import './bootstrap';
-import $ from 'jquery';
-window.$ = window.jQuery = $;
+import '../sass/app.scss'
+
+import * as jQuery from 'jquery';
+window.$ = window.jQuery = jQuery;
+import 'bootstrap'

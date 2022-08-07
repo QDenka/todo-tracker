@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', function () {
-        
-    });
+    Route::get('/', [IndexController::class, 'index']);
+
+    Route::resource('lists', ListController::class);
 });
